@@ -46,4 +46,27 @@ Instead of being done on the Amazon website, it was done on the Mercado Libre we
 
 ---
 
+### Project 3: web bot
+
+#### Description
+This project automates interactions with Trello using Selenium. It logs into Trello, navigates to a specific board, adds a task, and takes a screenshot of the page.
+
+#### Changes Made
+Custom implementation based on the original course material due to Trello source code changes since the course's release.
+
+#### Files
+- `trello_bot.py`: Main script for automating Trello interactions.
+- `config.json`: Configuration file where personal data needs to be filled in to use the project.
+- `chromedriver`: ChromeDriver executable required for Selenium (download the appropriate driver for your browser and OS).
+- `downloads`: Folder where the screenshots are saved.
+
+#### Usage
+1. Install dependencies using `pip install selenium`.
+2. Download the appropriate ChromeDriver for your browser and OS.
+3. Populate the `config.json` file with your Trello username and password.
+4. Run `python trello_bot.py` to start the automation.
+
+#### Notes
+- Ensure the `chromedriver` path is correctly set in the script.
+- The script runs in headless mode by default. Remove `OP.add_argument('--headless')` if you want to see the browser in action.
 
